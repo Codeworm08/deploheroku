@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <h1>Predict Cloth Size</h1>
+        <center><img src="/static/header.png" alt="border"  height=30vH width=100%></center><br>
+       <center><div class="entry">
+        <form action="{{ url_for('predict')}}" method="post">
+           Weight:<input type="text" name="weight" placeholder="kg" required>
+            Age:<input type="text" name="age" placeholder="years" required>
+            Height:<input type="text" name="height" placeholder="cm" required>
+            <button type="submit" class="btn">Predict</button>
+        </form> 
+        <br>
+        <br>
+    </center>
+    </body>
+</html>
