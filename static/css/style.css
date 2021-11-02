@@ -44,9 +44,10 @@ input{
 }
 input:focus{
     background-color: #e9c385;
+    font-size: 7vH;
 }
 .btn{
-    font-size: 18px;
+    font-size: 9vH;
     padding: 16px 34px;
     font-family: 'Brush Script MT', cursive;
     border-radius: 12px;
